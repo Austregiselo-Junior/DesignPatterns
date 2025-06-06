@@ -1,15 +1,16 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Adapter
 {
     internal class Program
     {
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
+            Service service = new Service();
+            IClient iclient = new Adapter(service); // Aqui estamos utilizando o adaptador para adaptar o serviço ao cliente.
+
+            Console.WriteLine(iclient.GetRequest());
+            Console.ReadLine();
         }
     }
 }
