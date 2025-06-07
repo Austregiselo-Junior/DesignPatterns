@@ -1,15 +1,29 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Observer
 {
     internal class Program
     {
-        static void Main(string[] args)
+        /// <summary>
+        /// Códigp do cliente.
+        /// </summary>
+        /// <param name="args"></param>
+        private static void Main(string[] args)
         {
+            var subject = new Subject();
+            var oberverA = new ConcreteObserverA();
+            var oberverB = new ConcreteObserverB();
+
+            subject.Subscribe(oberverA);
+            subject.Subscribe(oberverB);
+            Console.ReadLine();
+
+            subject.SomeBusinessLogic(); // Chama o método que altera o estado do subject e notifica os observadores.
+            Console.ReadLine();
+
+            subject.Unsubscribe(oberverB);
+            subject.Unsubscribe(oberverB);
+            Console.ReadLine();
         }
     }
 }
