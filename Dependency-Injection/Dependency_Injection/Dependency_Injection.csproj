@@ -35,6 +35,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Numerics" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -47,7 +48,9 @@
     <Compile Include="FileService.cs" />
     <Compile Include="IDataService.cs" />
     <Compile Include="IFileService.cs" />
-    <Compile Include="Message.cs" />
+    <Compile Include="IMessageService.cs" />
+    <Compile Include="Logger.cs" />
+    <Compile Include="MessageService.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

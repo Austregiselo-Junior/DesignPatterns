@@ -1,11 +1,11 @@
 ﻿namespace Dependency_Injection
 {
-    internal class Message
+    internal class MessageService
     {
         private readonly IDataService _dataService;
         private readonly IFileService _fileService;
 
-        public Message(IDataService dataService, IFileService fileService)
+        public MessageService(IDataService dataService, IFileService fileService)
         {
             _dataService = dataService;
             _fileService = fileService;
