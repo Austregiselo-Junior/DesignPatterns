@@ -43,6 +43,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DataBaseService.cs" />
+    <Compile Include="FileService.cs" />
     <Compile Include="IDataService.cs" />
     <Compile Include="IFileService.cs" />
     <Compile Include="Program.cs" />
