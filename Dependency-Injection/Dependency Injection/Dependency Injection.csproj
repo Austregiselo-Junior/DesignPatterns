@@ -47,6 +47,7 @@
     <Compile Include="FileService.cs" />
     <Compile Include="IDataService.cs" />
     <Compile Include="IFileService.cs" />
+    <Compile Include="Message.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
